@@ -42,12 +42,12 @@ Steps to preprocess the data and train and test the models:
 * Open the hyperparameters.py file and check which net_variant value is uncommented. That will be the first model to train and test.  
 * Execute commands in the order provided below in the training_testing.ipynb notebook:
   * mount the google drive as described above
-  * pip install torchdiffeq
-  * !python <path_to_data>/modules.py file
-  * !python <path_to_data>/modules_ode.py
-  * !python <path_to_data>/data_load.py
-  * !python <path_to_data>/train.py - This will generate a trained model and store it in the logdir sub-folder that was created earlier.
-  * !python <path_to_data>/test.py - This will generate the performance metrics for the model. Record these metrics. 
+  * `pip install torchdiffeq`
+  * `!python <path_to_data>/modules.py` 
+  * `!python <path_to_data>/modules_ode.py`
+  * `!python <path_to_data>/data_load.py`
+  * `!python <path_to_data>/train.py` - This will generate a trained model and store it in the logdir sub-folder that was created earlier.
+  * `!python <path_to_data>/test.py` - This will generate the performance metrics for the model. Record these metrics. 
   
 * Open the hyperparameters.py file and comment out the net_variant for the model run above. Uncomment another model. Then follow the train and test steps outlined above to get the performance of this next model, repeat these steps until you run all the models.
 * To run the logistic regression (baseline) model, execute commands in the order provided below in the test_train_logistic_regression.ipynb notebook: 

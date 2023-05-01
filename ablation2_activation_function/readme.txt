@@ -1,1 +1,1 @@
-This folder contains the models trained for this ablation.
+This folder contains the models trained for this ablation, as well as files that have code that was changed form the orignal.

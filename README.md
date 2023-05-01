@@ -69,8 +69,8 @@ The trained models can be found in the folders with ablation in the name, if any
 *
 
 3) Increasing the epochs from 10 to 15:
-* Navigate to the hyperparmeters.py file and find the line where epochs is set, intially this is set to 10 `epochs = 10`
-* Change `epochs = 10` to `epochs = 15`.
+* Navigate to the hyperparmeters.py file and find the line where epochs is set, intially this is set to 10 `num_epochs = 10`
+* Change `num_epochs = 10` to `num_epochs = 15`.
 * Now run the code as described above.
 
 

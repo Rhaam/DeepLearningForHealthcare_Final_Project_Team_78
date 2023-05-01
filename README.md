@@ -55,7 +55,18 @@ Steps to preprocess the data and train and test the models:
   * pip install torchdiffeq
   * python <path_to_data>/test_train_logreg.py
   
-* To run any of the 3 ablation studies: 1) Changing the min_count 2) Changing the activation function to Tanh 3) Increasing the epochs from 10 to 15: 
-  * Navigate to the respective Ablation folder - for example, ‘Ablation_2_Activation_Function’
-  * Open the testing_training ablation Google Colab notebook
-  * Execute the code to train and test the different models, each time opening the hyperparameters.py file in that ablation folder and commenting out the net_variant for the model you want to run.
+  
+## We have 3 ablation experiments: 
+The trained models can be found in the folders with ablation in the name, if any files need a great deal of things to be changed the new version of the file can be found in the respective ablation folder.  Instructions for running each of the abaltions can be found below.
+
+* 1) Changing the min_count 
+  * navigate to the hyperparmeters.py file and find the line where min_count is set, intially this is set to 100 `min_count = 100` 
+  * Change 100 to either 0 or 250 to replicate our results.
+  * Now run the code as described above.
+
+* 2) Changing the activation function to Tanh
+
+* 3) Increasing the epochs from 10 to 15
+
+
+

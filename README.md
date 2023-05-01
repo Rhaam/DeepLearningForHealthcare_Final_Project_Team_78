@@ -59,14 +59,14 @@ Steps to preprocess the data and train and test the models:
 ## We have 3 ablation experiments: 
 The trained models can be found in the folders with ablation in the name, if any files need a great deal of things to be changed the new version of the file can be found in the respective ablation folder.  Instructions for running each of the abaltions can be found below.
 
-* 1) Changing the min_count 
+1) Changing the min_count 
   * navigate to the hyperparmeters.py file and find the line where min_count is set, intially this is set to 100 `min_count = 100` 
   * Change 100 to either 0 or 250 to replicate our results.
   * Now run the code as described above.
 
-* 2) Changing the activation function to Tanh
+2) Changing the activation function to Tanh
 
-* 3) Increasing the epochs from 10 to 15
+3) Increasing the epochs from 10 to 15
 
 
 

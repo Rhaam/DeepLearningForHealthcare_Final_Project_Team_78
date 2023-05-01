@@ -21,8 +21,8 @@ Steps to preprocess the data and train and test the models:
 
 *Update the ‘hyperparameters.py’ file’s # data section with the path names for where your data related sub-folders are located. Adjust other hyperparameters, such as the number of epochs, if you would like to while fine tuning the models. 
 * Create the 2 Google Colab notebooks discussed below to execute code from the python files in the codebase. Add the following code to each of these notebooks to first mount the shared google drive to access its files and data:
-  * from google.colab import drive
-  * drive.mount('/content/drive')
+  * `from google.colab import drive`
+  * `drive.mount('/content/drive')`
 * Then execute the python files from the codebase, by entering a command such as ‘!python /content/drive/MyDrive/DLH_Team_78/our_code/preprocessing_reduce_outputs.py’ which provides the path to the file  
 
 * These are the 2 Colab notebooks:
@@ -52,8 +52,8 @@ Steps to preprocess the data and train and test the models:
 * Open the hyperparameters.py file and comment out the net_variant for the model run above. Uncomment another model. Then follow the train and test steps outlined above to get the performance of this next model, repeat these steps until you run all the models.
 * To run the logistic regression (baseline) model, execute commands in the order provided below in the test_train_logistic_regression.ipynb notebook: 
   * mount the google drive as described above
-  * pip install torchdiffeq
-  * python <path_to_data>/test_train_logreg.py
+  * `pip install torchdiffeq`
+  * `python <path_to_data>/test_train_logreg.py`
   
   
 ## We have 3 ablation experiments: 

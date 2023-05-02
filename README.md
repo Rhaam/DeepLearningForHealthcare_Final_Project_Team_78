@@ -21,7 +21,7 @@ Below are steps we took to access the data:
 
 * If working as a team, you can create a shared google drive folder to collaborate.
 
-## How to preprocess the data + commands + more set up information:
+## How to preprocess the data + More set up information:
 
 * Within the shared google drive, create the following 3 data related sub-folders:
   * mimic-iii-clinical-database-1.4: Place all the csv files unzipped from the MIMIC-III database in this folder. 
@@ -55,7 +55,7 @@ Add the following code to each of these notebooks to first mount the shared goog
   *  preprocessing_CHARTS_PRESCRIPTIONS.py 
   *  preprocessing_create_arrays.py 
   
-## How to training the models + commands:
+## How to train the models + Get performance metrics:
 * Open the hyperparameters.py file and check which net_variant value is uncommented. That will be the first model to train and test.  
 * Execute commands in the order provided below in the training_testing.ipynb notebook:
   * mount the google drive as described above
@@ -72,8 +72,9 @@ Add the following code to each of these notebooks to first mount the shared goog
   * `pip install torchdiffeq`
   * `python <path_to_data>/test_train_logreg.py`
   
+When the model is done running the performance metrics will be printed out.
   
-## We have 3 ablation experiments: 
+## Our ablation experiments and how to run them: 
 The trained models can be found in the folders with ablation in the name, if any files need a great deal of things to be changed the new version of the file can be found in the respective ablation folder.  Instructions for running each of the abaltions can be found below. Note that if you have run the base model and want to keep the models you have changed you should move them out of the logdir folder or they will be overwritten.
 
 1) Changing the min_count: 

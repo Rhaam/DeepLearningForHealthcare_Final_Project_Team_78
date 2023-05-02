@@ -1,16 +1,16 @@
 # DeepLearningForHealthcare_Final_Project_Team_78
 Code for the final project of deep learning for healthcare. Spring 2023
 
-## Citation to the original paper
+## Citation to the original paper:
 This repository has code for reproducing this study: Barbieri, S., Kemp, J., Perez-Concha, O. et al. Benchmarking Deep Learning Architectures for Predicting Readmission to the ICU and Describing Patients-at-Risk. Sci Rep 10, 1111 (2020). https://doi.org/10.1038/s41598-020-58053-z
 
-## Link to the original paper’s repo
+## Link to the original paper’s repo:
 The original code that this work is based on can be found at https://github.com/sebbarb/time_aware_attention
 
-## Dependencies
+## Dependencies:
 ADD INFORMATION ON WHERE WE RAN IT
 
-## Data download instruction
+## Data download instruction:
 The data used for this is the MIMIC-III database which can be accessed from https://physionet.org/ after completeing a training.
 
 Below are steps we took to access the data:
@@ -21,7 +21,7 @@ Below are steps we took to access the data:
 
 * If working as a team, you can create a shared google drive folder to collaborate.
 
-## How to preprocess the data + commands + more set up information
+## How to preprocess the data + commands + more set up information:
 
 * Within the shared google drive, create the following 3 data related sub-folders:
   * mimic-iii-clinical-database-1.4: Place all the csv files unzipped from the MIMIC-III database in this folder. 
@@ -55,7 +55,7 @@ Add the following code to each of these notebooks to first mount the shared goog
   *  preprocessing_CHARTS_PRESCRIPTIONS.py 
   *  preprocessing_create_arrays.py 
   
-## How to training the models + commands
+## How to training the models + commands:
 * Open the hyperparameters.py file and check which net_variant value is uncommented. That will be the first model to train and test.  
 * Execute commands in the order provided below in the training_testing.ipynb notebook:
   * mount the google drive as described above

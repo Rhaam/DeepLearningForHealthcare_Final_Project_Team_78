@@ -89,6 +89,22 @@ When the model is done running the performance metrics will be printed out.
 | Attention (concatenated time)       | 0.268 [0.246,0.29]  | 0.678 [0.67,0.686]  | 0.31 [0.3,0.321]     | 0.639 [0.621,0.656] | 0.653 [0.638,0.668] |
 | Logistic Regression                 | 0.259 [0.237,0.281] | 0.662 [0.653,0.67]  | 0.301 [0.289,0.312]  | 0.609 [0.578,0.639] | 0.65 [0.624,0.676]  |
   
+Time to run each model on Google Colab Pro with GPU (T4)
+
+|                Model                |                                          Training Time                                          |      Testing Time     |
+|:-----------------------------------:|:-----------------------------------------------------------------------------------------------:|:---------------------:|
+| ODE+RNN+Attention                   | 11 minutes 27 seconds                                                                           | 6 minutes 38 seconds  |
+| ODE+RNN                             | 11 minutes 36 seconds                                                                           | 7 minutes 18 seconds  |
+| RNN (ODE time decay)+Attention      | 2 hours 4 minutes                                                                               | 15 minutes 14 seconds |
+| RNN (ODE time decay)                | 2 hours 5 minutes                                                                               | 15 minutes 45 seconds |
+|  RNN (exp time decay)+Attention     | 1 hour 9 minutes                                                                                | 10 minutes 3 seconds  |
+| RNN (exp time decay)                | 3 hours 22 minutes                                                                              | 10 minutes 10 seconds |
+| RNN (concatenated Δtime)+ Attention | 1 minute 17 seconds                                                                             | 6 minutes 32 seconds  |
+| RNN (concatenated Δtime)            | 1 minute 20 seconds                                                                             | 6 minutes 34 seconds  |
+| ODE+Attention                       | 13 minutes 5 seconds                                                                            | 6 minutes 52 seconds  |
+| Attention (concatenated time)       | 53 seconds                                                                                      | 6 minutes 18 seconds  |
+| Logistic Regression                 | 4 minutes 22 seconds *Note: training and testing for logistic regression happen all in one file |                       |
+
 ## Our ablation experiments and how to run them: 
 The trained models can be found in the folders with ablation in the name, if any files need a great deal of things to be changed the new version of the file can be found in the respective ablation folder.  Instructions for running each of the abaltions can be found below. Note that if you have run the base model and want to keep the models you have changed you should move them out of the logdir folder or they will be overwritten.
 

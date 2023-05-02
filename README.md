@@ -60,7 +60,7 @@ Steps to preprocess the data and train and test the models:
 The trained models can be found in the folders with ablation in the name, if any files need a great deal of things to be changed the new version of the file can be found in the respective ablation folder.  Instructions for running each of the abaltions can be found below.
 
 1) Changing the min_count: 
-* Navigate to the hyperparmeters.py file and find the line where min_count is set, intially this is set to 100 `min_count = 100` 
+* Navigate to the hyperparmeters.py file and find the line where min_count is set, intially this is set to `min_count = 100` 
 * Change `min_count = 100` to either `min_count = 0` or `min_count = 250` to replicate our results.
 * Now run the code as described above.
 

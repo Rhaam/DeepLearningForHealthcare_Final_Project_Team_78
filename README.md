@@ -19,7 +19,7 @@ Below are steps we took to access the data:
 
 * If working as a team, you can create a shared google drive folder to collaborate.
 
-**We chose to upload the data to google drive because we did not have enough space on our local machines for the unzipped data, it also make collaboration easier.**
+**We chose to upload the data to google drive because we did not have enough space on our local machines for the unzipped data.**
 
 ## How to preprocess the data + More set up information:
 

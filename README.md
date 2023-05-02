@@ -17,7 +17,7 @@ Below are steps we took to access the data:
 
 * To Acess the data: Complete the required training from https://physionet.org/ to access the MIMIC-III  Clinical Database 1.4 which is the data source for this paper. After you have downloaded the files unzip them.  
 
-*We chose to upload the data to google drive because we did not have enough space on our local machines for the unzipped data.
+**We chose to upload the data to google drive because we did not have enough space on our local machines for the unzipped data.**
 
 * If working as a team, you can create a shared google drive folder to collaborate.
 
@@ -73,6 +73,9 @@ Add the following code to each of these notebooks to first mount the shared goog
   * `python <path_to_data>/test_train_logreg.py`
   
 When the model is done running the performance metrics will be printed out.
+
+## Table of results
+TABLEEEEEEEEEEEEEEEE
   
 ## Our ablation experiments and how to run them: 
 The trained models can be found in the folders with ablation in the name, if any files need a great deal of things to be changed the new version of the file can be found in the respective ablation folder.  Instructions for running each of the abaltions can be found below. Note that if you have run the base model and want to keep the models you have changed you should move them out of the logdir folder or they will be overwritten.
@@ -91,6 +94,6 @@ The trained models can be found in the folders with ablation in the name, if any
 * Change `num_epochs = 10` to `num_epochs = 15`.
 * Now run the code as described above.
 
-*for ablation 1 it is neccessar to rerun the preprocessing code after making the min_count adjustment, but for the other two ablations it isnt necessary to run the preprocessing code.
+**for ablation 1 it is neccessar to rerun the preprocessing code after making the min_count adjustment, but for the other two ablations it isnt necessary to run the preprocessing code.**
 
 

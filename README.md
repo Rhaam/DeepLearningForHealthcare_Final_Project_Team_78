@@ -70,7 +70,7 @@ Add the following code to each of these notebooks to first mount the shared goog
 * To run the logistic regression (baseline) model, execute commands in the order provided below in the test_train_logistic_regression.ipynb notebook: 
   * mount the google drive as described above
   * `pip install torchdiffeq`
-  * `python <path_to_data>/test_train_logreg.py`
+  * `!python <path_to_data>/test_train_logreg.py`
   
 When the model is done running the performance metrics will be printed out.
 

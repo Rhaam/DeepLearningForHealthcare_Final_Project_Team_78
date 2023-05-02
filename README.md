@@ -19,7 +19,7 @@ Steps to preprocess the data and train and test the models:
 
 * To mount the shared folder on a team member’s google drive, so that any team member can run the Colab notebook and access the needed data and python files, take the following steps: Go to Google Drive, right click on the shared folder, and then click ‘Add shortcut to Drive’. This will allow the team member to access the shared folder from their drive and execute the python scripts from the Google Colab notebook.
 
-*Update the ‘hyperparameters.py’ file’s # data section with the path names for where your data related sub-folders are located. Adjust other hyperparameters, such as the number of epochs, if you would like to while fine tuning the models. 
+* Update the ‘hyperparameters.py’ file’s # data section with the path names for where your data related sub-folders are located. Adjust other hyperparameters, such as the number of epochs, if you would like to while fine tuning the models. 
 * Create the 2 Google Colab notebooks discussed below to execute code from the python files in the codebase. Add the following code to each of these notebooks to first mount the shared google drive to access its files and data:
   * `from google.colab import drive`
   * `drive.mount('/content/drive')`

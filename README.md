@@ -8,18 +8,18 @@ This repository has code for reproducing this study: Barbieri, S., Kemp, J., Per
 The original code that this work is based on can be found at https://github.com/sebbarb/time_aware_attention
 
 ## Dependencies:
-ADD INFORMATION ON WHERE WE RAN IT
+We used Google Colab Pro to run the preprocessing steps for the data, and to train and test the models. Over many days it would be possible to run the models as we have on Colab free but if you want to run them in a shorter period of time you have to buy Colab pro.  For data preprocessing we used CPU and for training and testing the models we used GPU (T4).  For google drive we paid for Google One to get more storage space, as the data and models are all together bigger than 15GB which is what is free on google drive.
 
 ## Data download instruction:
 The data used for this is the MIMIC-III database which can be accessed from https://physionet.org/ after completeing a training.
 
 Below are steps we took to access the data:
 
-* To Acess the data: Complete the required training from https://physionet.org/ to access the MIMIC-III  Clinical Database 1.4 which is the data source for this paper. After you have downloaded the files unzip them.  
-
-**We chose to upload the data to google drive because we did not have enough space on our local machines for the unzipped data.**
+* To Access the data: Complete the required training from https://physionet.org/ to access the MIMIC-III  Clinical Database 1.4 which is the data source for this paper. After you have downloaded the files unzip them.  
 
 * If working as a team, you can create a shared google drive folder to collaborate.
+
+**We chose to upload the data to google drive because we did not have enough space on our local machines for the unzipped data, it also make collaboration easier.**
 
 ## How to preprocess the data + More set up information:
 

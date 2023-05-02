@@ -75,7 +75,19 @@ Add the following code to each of these notebooks to first mount the shared goog
 When the model is done running the performance metrics will be printed out.
 
 ## Table of results
-TABLEEEEEEEEEEEEEEEE
+|                Model                |  Average Precision  |        AUROC        |       F1-Score       |     Sensitivity     |     Specificity     |
+|:-----------------------------------:|:-------------------:|:-------------------:|:--------------------:|:-------------------:|:-------------------:|
+| ODE+RNN+Attention                   | 0.3 [0.278,0.323]   | 0.719 [0.711,0.728] | 0.344  [0.331,0.356] | 0.687 [0.668,0.707] | 0.656 [0.636,0.675] |
+| ODE+RNN                             | 0.312 [0.289,0.335] | 0.716 [0.708,0.725] | 0.357 [0.344,0.369]  | 0.613 [0.587,0.64]  | 0.726 [0.703,0.75]  |
+| RNN (ODE time decay)+Attention      | 0.304 [0.281,0.327] | 0.725 [0.717,0.734] | 0.349 [0.337,0.361]  | 0.664 [0.641,0.688] | 0.691 [0.672,0.709] |
+| RNN (ODE time decay)                | 0.295 [0.274,0.316] | 0.709 [0.701,0.717] | 0.344 [0.334,0.354]  | 0.677 [0.647,0.707] | 0.658 [0.629,0.687] |
+|  RNN (exp time decay)+Attention     | 0.284 [0.265,0.304] | 0.711 [0.703,0.719] | 0.335 [0.324,0.347]  | 0.675 [0.642,0.708] | 0.65 [0.618,0.682]  |
+| RNN (exp time decay)                | 0.297 [0.275,0.319] | 0.712 [0.704,0.72]  | 0.34 [0.329,0.352]   | 0.686 [0.653,0.718] | 0.647 [0.619,0.676] |
+| RNN (concatenated Δtime)+ Attention | 0.292 [0.27,0.315]  | 0.702 [0.693,0.711] | 0.345 [0.332,0.358]  | 0.652 [0.62,0.684]  | 0.66 [0.632,0.688]  |
+| RNN (concatenated Δtime)            | 0.306 [0.283,0.329] | 0.716 [0.708,0.725] | 0.349 [0.338,0.36]   | 0.672 [0.656,0.687] | 0.688 [0.675,0.701] |
+| ODE+Attention                       | 0.27 [0.248,0.293]  | 0.684 [0.674,0.694] | 0.31 [0.298,0.322]   | 0.651 [0.613,0.69]  | 0.622 [0.59,0.654]  |
+| Attention (concatenated time)       | 0.268 [0.246,0.29]  | 0.678 [0.67,0.686]  | 0.31 [0.3,0.321]     | 0.639 [0.621,0.656] | 0.653 [0.638,0.668] |
+| Logistic Regression                 | 0.259 [0.237,0.281] | 0.662 [0.653,0.67]  | 0.301 [0.289,0.312]  | 0.609 [0.578,0.639] | 0.65 [0.624,0.676]  |
   
 ## Our ablation experiments and how to run them: 
 The trained models can be found in the folders with ablation in the name, if any files need a great deal of things to be changed the new version of the file can be found in the respective ablation folder.  Instructions for running each of the abaltions can be found below. Note that if you have run the base model and want to keep the models you have changed you should move them out of the logdir folder or they will be overwritten.

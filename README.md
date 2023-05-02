@@ -106,6 +106,6 @@ The trained models can be found in the folders with ablation in the name, if any
 * Change `num_epochs = 10` to `num_epochs = 15`.
 * Now run the code as described above.
 
-**for ablation 1 it is neccessar to rerun the preprocessing code after making the min_count adjustment, but for the other two ablations it isnt necessary to run the preprocessing code.**
+**for ablation 1 it is neccessary to rerun the preprocessing code after making the min_count adjustment, but for the other two ablations it isnt necessary to run the preprocessing code.**
 
 

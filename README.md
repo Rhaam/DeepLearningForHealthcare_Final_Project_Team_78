@@ -114,7 +114,7 @@ The trained models can be found in the folders with ablation in the name, if any
 * Now run the code as described above.
 
 2) Changing the activation function to Tanh:
-* Replace the files modules.py and modules_ode.py from the base model with these two files from the ablation 3 folder, or simply download and change the file path.
+* Replace the files modules.py and modules_ode.py from the base model with these two files from the ablation 2 folder, or simply download and change the file path.
 * Now run the code as described above.
 
 3) Increasing the epochs from 10 to 15:
